@@ -13,5 +13,8 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-buttons>
+    <ion-button fill="clear" (click)="changeState()"><ion-icon name="toggle-outline"></ion-icon></ion-button>
+    <ion-button fill="clear" [disabled]="isDisabled"><ion-icon name="flash-outline"></ion-icon></ion-button>
+  </ion-buttons>
 </ion-content>
